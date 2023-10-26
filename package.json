@@ -1,0 +1,31 @@
+{
+  "name": "pdfmerge",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "vite-plugin-linter",
+    "lint-fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "filesize": "^10.1.0",
+    "pdf-merger-js": "^4.3.0",
+    "pdfjs-dist": "^3.11.174",
+    "preact": "^10.16.0",
+    "react-bulma-components": "^4.1.0",
+    "react-dropzone": "^14.2.3"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-plugin-react": "^7.33.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-linter": "^2.0.7"
+  }
+}

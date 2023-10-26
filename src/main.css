@@ -1,0 +1,48 @@
+@import "https://cdn.jsdelivr.net/npm/bulmaswatch@0.8.1/flatly/bulmaswatch.min.css";
+
+#main {
+  /* max-width: 960px; */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dropzone {
+    border: 3px dashed rgba(0, 0, 0, 0.3);
+    padding: 0.2cm;
+    min-height: 3cm;
+}
+
+.dropzone > p {
+    margin: 1cm auto;
+}
+
+.controls-container {
+    display: inline-flex;
+    margin-bottom: 6mm;
+}
+
+.controls-container > .field {margin: auto 1mm;}
+
+canvas.pdf-preview {
+    width: 100%;
+}
+
+.card.pdf-preview .card-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+
+.file-list > .card.pdf-preview {
+    display: block;
+    margin: 0.2cm;
+}
+
+.file-list {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(8cm, 100vw), 1fr)); /* 3 equal-width columns */
+    align-items: stretch; /* Make all items in a row have the same height */
+}

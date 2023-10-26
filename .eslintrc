@@ -1,0 +1,44 @@
+{
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "rules": {
+      "space-before-function-paren": "off",
+
+      "semi": "warn",
+      "quotes": "warn",
+      "quote-props": "warn",
+      "comma-dangle": "warn",
+      "keyword-spacing": "warn",
+      "block-spacing": ["warn", "always"],
+      "object-curly-spacing": ["warn", "always"],
+      "brace-style": ["warn", "1tbs", {"allowSingleLine": true}],
+      "space-infix-ops": "warn",
+
+      "indent": ["warn", 2],
+      "no-multiple-empty-lines": "warn",
+      "padded-blocks": ["warn", "never"],
+
+      "one-var": "off",
+      "prefer-const": "warn",
+      "no-unused-vars": "warn",
+      "no-use-before-define": "warn",
+
+      "no-duplicate-imports": ["error"],
+      "@typescript-eslint/no-unused-vars": ["warn"],
+      "@typescript-eslint/no-explicit-any": ["warn"],
+      "@typescript-eslint/no-use-before-define": ["error"],
+
+      "react/react-in-jsx-scope": "off",
+    }
+  }
