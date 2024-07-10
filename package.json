@@ -16,7 +16,7 @@
   "dependencies": {
     "filesize": "^10.0.0",
     "pdf-merger-js": "^5.0.0",
-    "pdfjs-dist": "^3.11.174",
+    "pdfjs-dist": "4.4.168",
     "preact": "^10.22.0",
     "react-bulma-components": "^4.0.0",
     "react-dropzone": "^14.0.0"

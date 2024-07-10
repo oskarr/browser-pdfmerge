@@ -8,7 +8,8 @@ const PdfJs = import(/* webpackPrefetch: true, webpackMode: "lazy-once", webpack
 async function displayPDFPreview(pdfData: ArrayBuffer, canvas: HTMLCanvasElement, pageno: number) {
   // Initialize PDF.js
   const { getDocument, GlobalWorkerOptions } = await PdfJs;
-  GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";
+  // Make sure this is the same version as in package.json
+  GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.4.168/build/pdf.worker.mjs";
 
   const pdf = await getDocument(pdfData).promise,
     page = await pdf.getPage(pageno),

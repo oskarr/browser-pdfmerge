@@ -51,7 +51,7 @@ const DropZone: FunctionalComponent = () => {
           <Form.Field className="has-addons is-horizontal">{/* TODO: Don't use className for bulma stuff */}
             <Form.Control><Button isStatic>{files.length} files: </Button></Form.Control>
             <Form.Control>
-              <Button color={files.length == 0 ? "danger" : "success"} disabled={files.length == -1}
+              <Button color={files.length == 0 ? "danger" : "success"} disabled={files.length == 0}
                 onClick={async () => await merge(files, booklet)}
               >Merge</Button>
             </Form.Control>
@@ -71,12 +71,12 @@ const DropZone: FunctionalComponent = () => {
             }} color={isAscending ? undefined : "link"}>&uarr;</Button></Form.Control>
           </Form.Field>
           {/* Selection controls. */}
-          <Form.Field className="has-addons is-horizontal">
+          {/* <Form.Field className="has-addons is-horizontal">
             <Form.Control><Button isStatic>Selected </Button></Form.Control>
             <Form.Control>
               <Button color="danger" disabled>Delete</Button>
             </Form.Control>
-          </Form.Field>
+          </Form.Field> */}
           {/* Booklet controls */}
           <Form.Field className="has-addons is-horizontal">
             <Form.Control><Button isStatic>Booklet</Button></Form.Control>
@@ -97,7 +97,7 @@ const DropZone: FunctionalComponent = () => {
             {files.length > 0 && <div className="file-list">{files.map((file, i) =>
               (<FilePreview key={file} file={file}
                 onPrev={i == 0 ? undefined : () => { moveFile(i, -1); }}
-                // onDelete={() => { setFiles(files.filter((f) => f !== file)); }}
+                onDelete={() => { setFiles(files.filter((f) => f !== file)); }}
                 onNext={i == files.length - 1 ? undefined : () => { moveFile(i, 1); }}
               />)
             )}</div>}
