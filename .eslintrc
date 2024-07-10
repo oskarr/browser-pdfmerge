@@ -17,7 +17,7 @@
 
       "semi": "warn",
       "quotes": "warn",
-      "quote-props": "warn",
+      "quote-props": ["warn", "consistent-as-needed"],
       "comma-dangle": "warn",
       "keyword-spacing": "warn",
       "block-spacing": ["warn", "always"],

@@ -1,31 +1,36 @@
 {
   "name": "pdfmerge",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
+    "test": "vitest --run",
+    "test-watch": "vitest --watch",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "vite-plugin-linter",
-    "lint-fix": "eslint . --fix"
+    "lint-fix": "vite-plugin-linter --fix"
   },
   "dependencies": {
-    "filesize": "^10.1.0",
-    "pdf-merger-js": "^4.3.0",
+    "filesize": "^10.0.0",
+    "pdf-merger-js": "^5.0.0",
     "pdfjs-dist": "^3.11.174",
-    "preact": "^10.16.0",
-    "react-bulma-components": "^4.1.0",
-    "react-dropzone": "^14.2.3"
+    "preact": "^10.22.0",
+    "react-bulma-components": "^4.0.0",
+    "react-dropzone": "^14.0.0"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.5.0",
-    "@typescript-eslint/eslint-plugin": "^6.9.0",
-    "@typescript-eslint/parser": "^6.9.0",
-    "eslint": "^8.52.0",
-    "eslint-plugin-react": "^7.33.2",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5",
-    "vite-plugin-linter": "^2.0.7"
+    "@preact/preset-vite": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "pdf-lib": "^1.17.1",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "vite-plugin-linter": "^2.0.0",
+    "vitest": "^1.6.0"
   }
 }

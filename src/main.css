@@ -18,11 +18,15 @@
 }
 
 .controls-container {
-    display: inline-flex;
+    display: inline-block;
     margin-bottom: 6mm;
+    line-height: 3em;
 }
 
-.controls-container > .field {margin: auto 1mm;}
+.controls-container > .field {
+    margin: auto 1mm;
+    display: inline-flex;
+}
 
 canvas.pdf-preview {
     width: 100%;
@@ -34,10 +38,18 @@ canvas.pdf-preview {
     bottom: 0px;
 }
 
+.card.pdf-preview > .card-header > .button {
+    margin: auto 0.25em; /* TODO: Don't hard-code margins */
+}
+
 
 .file-list > .card.pdf-preview {
     display: block;
     margin: 0.2cm;
+}
+
+.card-header-title {
+    overflow-x: scroll;
 }
 
 .file-list {
